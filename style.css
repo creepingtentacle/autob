@@ -13,7 +13,7 @@ body {
 /* Шапка */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 10px;
     background: #00796b;
@@ -23,23 +23,36 @@ header {
 header .logo {
     font-size: 2em;
     font-weight: bold;
-}
-
-header nav {
-    display: flex;
-    gap: 20px;
-}
-
-header nav a {
     color: #fff;
+    text-align: center;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #00796b;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #000;
+    padding: 14px 20px;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
+    font-size: 1.1em;
     transition: color 0.3s ease-in-out;
 }
 
-header nav a:hover {
-    color: #004d40;
+nav a:hover {
+    color: #ff4081;
+}
+
+nav a:focus, nav a:hover {
+    outline: none;
+    box-shadow: none;
 }
 
 /* Стили каталога */
@@ -105,29 +118,6 @@ header nav a:hover {
     font-weight: 700;
     border-radius: 5px;
     transform: rotate(10deg);
-}
-
-/* Кнопки */
-button {
-    padding: 10px 20px;
-    background: #00796b;
-    color: #fff;
-    border: 2px solid #004d40;
-    border-radius: 5px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-}
-
-button:hover {
-    background: #004d40;
-    color: #fff;
-    border-color: #00796b;
-}
-
-button:focus, a:focus {
-    outline: none;
-    box-shadow: none;
 }
 
 /* Подвал */
