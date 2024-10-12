@@ -3,7 +3,8 @@
 /* Общие стили */
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #f0f4f8, #ffffff);
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px 10px;
-    background: #00796b;
+    background: rgba(255, 23, 68, 0.8); /* Полупрозрачный фон */
     color: #fff;
 }
 
@@ -31,13 +32,13 @@ header .logo {
 nav {
     display: flex;
     justify-content: center;
-    background: #00796b;
+    background: rgba(33, 33, 33, 0.8); /* Полупрозрачный фон */
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    color: #000;
+    color: #fff;
     padding: 14px 20px;
     text-decoration: none;
     font-weight: 700;
@@ -86,7 +87,7 @@ nav a:focus, nav a:hover {
 .catalog-item .item-info h3 {
     margin: 0;
     font-weight: 700;
-    color: #00796b;
+    color: #ff1744;
 }
 
 .catalog-item .item-info p {
@@ -98,7 +99,7 @@ nav a:focus, nav a:hover {
 .catalog-item .item-info .price {
     font-size: 1.2em;
     font-weight: 700;
-    color: #004d40;
+    color: #b71c1c;
 }
 
 .catalog-item:hover {
@@ -120,11 +121,34 @@ nav a:focus, nav a:hover {
     transform: rotate(10deg);
 }
 
+/* Кнопки */
+button {
+    padding: 10px 20px;
+    background: #212121;
+    color: #fff;
+    border: 2px solid #b71c1c;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #b71c1c;
+    color: #fff;
+    border-color: #ff1744;
+}
+
+button:focus, a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 /* Подвал */
 footer {
     text-align: center;
     padding: 20px;
-    background: #00796b;
+    background: rgba(255, 23, 68, 0.8); /* Полупрозрачный фон */
     color: #fff;
     position: relative;
 }
