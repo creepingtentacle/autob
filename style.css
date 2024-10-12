@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 /* Общие стили */
 body {
     font-family: 'Inter', sans-serif;
@@ -48,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #800000;
+    color: #ff4081;
 }
 
 nav a:focus, nav a:hover {
@@ -158,27 +156,20 @@ footer p {
     font-size: 0.9em;
 }
 
-    margin: 0;
-    font-size: 0.9em;
-}
-/* Удаляем подчеркивание и синий цвет */
-nav a, nav a:visited {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #ff4081; /* Цвет при наведении */
-}
-
-nav a:focus, nav a:hover {
-    outline: none;
-    box-shadow: none;
-}
 /* Медиа-запросы для адаптации на мобильных устройствах */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
     header .logo {
         font-size: 1.5em;
+    }
+
+    nav {
+        flex-direction: column;
     }
 
     nav a {
@@ -192,5 +183,6 @@ nav a:focus, nav a:hover {
 
     .catalog-item {
         margin-bottom: 20px;
-    
+    }
+}
 
