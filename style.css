@@ -17,7 +17,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px 10px;
-    background: rgba(255, 23, 68, 0.8); /* Полупрозрачный фон */
+    background: rgba(128, 0, 0, 0.8); /* Полупрозрачный фон винного цвета */
     color: #fff;
 }
 
@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff4081;
+    color: #800000;
 }
 
 nav a:focus, nav a:hover {
@@ -87,7 +87,7 @@ nav a:focus, nav a:hover {
 .catalog-item .item-info h3 {
     margin: 0;
     font-weight: 700;
-    color: #ff1744;
+    color: #800000; /* Винный цвет */
 }
 
 .catalog-item .item-info p {
@@ -99,7 +99,7 @@ nav a:focus, nav a:hover {
 .catalog-item .item-info .price {
     font-size: 1.2em;
     font-weight: 700;
-    color: #b71c1c;
+    color: #4b0e0e; /* Более темный винный цвет */
 }
 
 .catalog-item:hover {
@@ -112,7 +112,7 @@ nav a:focus, nav a:hover {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: #ff4081;
+    background: #b21818;
     color: #fff;
     padding: 5px 10px;
     font-size: 0.8em;
@@ -126,7 +126,7 @@ button {
     padding: 10px 20px;
     background: #212121;
     color: #fff;
-    border: 2px solid #b71c1c;
+    border: 2px solid #4b0e0e;
     border-radius: 5px;
     font-weight: 700;
     cursor: pointer;
@@ -134,9 +134,9 @@ button {
 }
 
 button:hover {
-    background: #b71c1c;
+    background: #4b0e0e;
     color: #fff;
-    border-color: #ff1744;
+    border-color: #800000;
 }
 
 button:focus, a:focus {
@@ -148,12 +148,16 @@ button:focus, a:focus {
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(255, 23, 68, 0.8); /* Полупрозрачный фон */
+    background: rgba(128, 0, 0, 0.8); /* Полупрозрачный фон винного цвета */
     color: #fff;
     position: relative;
 }
 
 footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
     margin: 0;
     font-size: 0.9em;
 }
