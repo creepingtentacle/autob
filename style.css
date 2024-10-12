@@ -107,6 +107,29 @@ header nav a:hover {
     transform: rotate(10deg);
 }
 
+/* Кнопки */
+button {
+    padding: 10px 20px;
+    background: #00796b;
+    color: #fff;
+    border: 2px solid #004d40;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #004d40;
+    color: #fff;
+    border-color: #00796b;
+}
+
+button:focus, a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 /* Подвал */
 footer {
     text-align: center;
@@ -120,4 +143,3 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
-
