@@ -161,3 +161,18 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
+/* Удаляем подчеркивание и синий цвет */
+nav a, nav a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff4081; /* Цвет при наведении */
+}
+
+nav a:focus, nav a:hover {
+    outline: none;
+    box-shadow: none;
+}
+
